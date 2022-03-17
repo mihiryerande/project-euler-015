@@ -1,5 +1,5 @@
-# Problem 13:
-#     Large Sum
+# Problem 15:
+#     Lattice Paths
 #
 # Description:
 #     Starting in the top left corner of a 2×2 grid,
