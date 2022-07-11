@@ -6,24 +6,27 @@
 #       and only being able to move to the right and down,
 #       there are exactly 6 routes to the bottom right corner.
 #
-# How many such routes are there through a 20×20 grid?
+#     How many such routes are there through a 20×20 grid?
 
 from math import comb
 
 
-def main(w, h):
+def main(w: int, h: int) -> int:
     """
     Returns the number of distinct paths through a `w`×`h` rectangular grid,
-        starting in the top-left corner,
-        ending in the bottom-right corner,
-        only having steps down or right.
+      starting in the top-left corner,
+      ending in the bottom-right corner,
+      only having steps down or right.
 
     Args:
         w (int): Natural number
         h (int): Natural number
 
     Returns:
-        Number of down-right lattice paths through w×h grid.
+        (int): Number of down-right lattice paths through w×h grid
+
+    Raises:
+        AssertError: if incorrect args are given
     """
     assert type(w) == int and w > 0
     assert type(h) == int and h > 0
